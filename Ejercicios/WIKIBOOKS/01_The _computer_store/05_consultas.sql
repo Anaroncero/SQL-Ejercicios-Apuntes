@@ -77,3 +77,4 @@ UPDATE Products SET name = 'Laser Printer' WHERE Code = 8;
 UPDATE Products SET price = price - (price * 0.1);
 
 -- 21. Aplicar un 10% de descuento a todos los productos con un precio mayor o igual a $120.
+UPDATE Products SET price = price - (price * 0.1) WHERE price >= 120;
