@@ -1,0 +1,16 @@
+SQL ("Structured Query Language”) Es un lenguaje que creo IBM como un lenguaje
+unificado para definir, consultar, modificar y controlar los datos en una base
+de datos relacional. En 1986 fue estandarizado por ANSI, y en 1987 por la ISO.
+
+DDL (Data Definition Language) define estructuras.
+DCL (Data Control Language) controla permisos.
+DML (Data Manipulation Language) manipula datos.
+DQL (Data Query Language) consulta datos.
+FD (Functional Dependencies) trata con dependencias funcionales.
+AF  (Aggregate Functions) realiza cálculos agregados.
+CD (Complex Data) se refiere a datos complejos.
+TCL (Transaction Control Language) gestiona transacciones.
+
+Instrucción SQL:
+comando + clasula + operadores + funciones
+
