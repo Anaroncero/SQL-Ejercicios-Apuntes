@@ -1,7 +1,13 @@
--- Ana Pastor Roncero
+use cine;
+
+-- -------------------------------------------
+-- Creacion BBDD CINE, usuarios, permisos
+-- -------------------------------------------
+
+
 DROP DATABASE IF EXISTS cine; 
 create database cine;
-use cine;
+
 
 drop table if exists genero; -- si existe una tabla que se llame empleados que se borre
 create table genero(

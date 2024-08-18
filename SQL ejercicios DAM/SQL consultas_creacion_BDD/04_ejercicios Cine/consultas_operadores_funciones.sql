@@ -1,5 +1,10 @@
 use cine;
 
+-- -------------------------------------------
+-- CONSULTAS con operadores y funciones
+-- -------------------------------------------
+
+
 -- 1. Listado de actores ordenados por nombre.
 select * from actor order by nombre;
 
@@ -7,7 +12,7 @@ select * from actor order by nombre;
 select * from pelicula where duracion < 120;
 
 -- 3. Seleccionar el título, duración y año de las películas estrenadas después del año 2000 de nacionalidad España.
-select titulo, duracion, anyo from pelicula where nacionalidad = 'Espa├▒a' and anyo > 2000;
+select titulo, duracion, anyo from pelicula where nacionalidad = 'Espana' and anyo > 2000;
 select * from pelicula;
 
 -- 4. Listado de las diferentes nacionalidades de películas disponibles en la base de datos.

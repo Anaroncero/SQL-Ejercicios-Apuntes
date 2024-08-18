@@ -1,5 +1,7 @@
+use profesores;
+
 -- --------------------------------------
--- Consultas de Multitablas
+-- Multitablas
 -- --------------------------------------
 
 -- Mostrar todo el contenido de las tablas profesores e imparte donde p.dni = i.dni

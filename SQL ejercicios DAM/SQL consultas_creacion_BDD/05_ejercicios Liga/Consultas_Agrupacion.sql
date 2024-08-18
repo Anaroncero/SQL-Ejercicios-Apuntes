@@ -1,5 +1,7 @@
+use liga;
+
 -- --------------------------------------
--- Consultas de agrupación
+-- Consultas de agrupacion
 -- --------------------------------------
 
 -- 1. Calcular cuántos partidos se jugaron en noviembre.

@@ -40,7 +40,7 @@ INSERT INTO cuentas(dni_titular, saldo) VALUES('42157986P','2800.45');
 
 -- Crear usuario 
 drop user 'alumno16'@'localhost';
-CREATE USER 'alumno16'@'localhost' IDENTIFIED BY 'Med@c';
+CREATE USER 'alumno16'@'localhost' IDENTIFIED BY '12345';
 -- otorgar privilegio al usuario en la base de datos
 GRANT ALL PRIVILEGES ON * . * TO 'alumno16'@'localhost';
 -- aplicar los privilegios

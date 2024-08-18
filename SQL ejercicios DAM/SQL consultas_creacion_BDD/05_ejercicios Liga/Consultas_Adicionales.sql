@@ -1,3 +1,4 @@
+use liga;
 
 -- --------------------------------------
 -- Consultas Adicionales Tercera Relación

@@ -1,14 +1,19 @@
 use universidad;
 
--- SUBCONSULTAS ---------------------------------------------
+-- --------------------------------------
+-- Multitablas
+-- --------------------------------------
 
 -- 1. Datos del alumno con más edad
 SELECT * FROM persona WHERE tipo = 'alumno' ORDER BY fecha_nacimiento ASC LIMIT 1;
 
--- 2. Mostrar datos de las asignaturas que tienen más créditos que todas las demás
+-- 2. Mostrar cuántas asignaturas de cada tipo hay en la universidad en cualquier curso y grado
+SELECT tipo, COUNT(*) AS cantidad_asignaturas FROM asignatura GROUP BY tipo;
+
+-- 3. Mostrar datos de las asignaturas que tienen más créditos que todas las demás
 SELECT * FROM asignatura WHERE creditos = (SELECT MAX(creditos) FROM asignatura);
 
--- 3. Mostrar datos de las asignaturas con menos créditos
+-- 4. Mostrar datos de las asignaturas con menos créditos
 SELECT * FROM asignatura WHERE creditos = (SELECT MIN(creditos) FROM asignatura);
 
 -- 6. Calcular el número de asignaturas que hay en cada curso y grado (No hace falta que aparezca el nombre de cada grado, basta con el id)
@@ -26,6 +31,12 @@ SELECT p.* FROM persona p JOIN asignatura a ON p.id = a.id_profesor WHERE a.id_p
 -- 10. Calcular el número de asignaturas que hay en cada grado mostrando el nombre del grado
 SELECT g.nombre, COUNT(*) AS suma FROM grado g JOIN asignatura a ON a.id_grado = g.id GROUP BY g.nombre;
 
+-- 11. Nombre y apellidos del alumno, y nombre y créditos de las asignaturas de las que está matriculado
+SELECT p.nombre, p.apellido1, p.apellido2, a.nombre, a.creditos
+FROM persona p
+JOIN alumno_se_matricula_asignatura asma ON p.id = asma.id_alumno
+JOIN asignatura a ON asma.id_asignatura = a.id;
+
 -- 12. Datos de las asignaturas donde se hayan matriculado al menos 5 alumnos
 SELECT a.*
 FROM asignatura a
@@ -39,11 +50,21 @@ FROM persona p
 JOIN asignatura a ON a.id_profesor = p.id
 GROUP BY p.nif;
 
+-- 14. Mostrar el nombre de todas las asignaturas, nombre de su grado y nombre y apellidos de su profesor asociado
+SELECT a.nombre AS asignatura, g.nombre AS grado, p.nombre, p.apellido1, p.apellido2
+FROM asignatura a
+JOIN grado g ON a.id_grado = g.id
+JOIN persona p ON a.id_profesor = p.id
+WHERE p.tipo = 'profesor' AND a.id_profesor IS NOT NULL;
+
 -- 21. Cuenta el número de asignaturas por tipo (básica, obligatoria, optativa) y solo muestra las que tengan más de 5 asignaturas
 SELECT tipo, COUNT(*) AS total_asignaturas FROM asignatura GROUP BY tipo HAVING total_asignaturas > 5;
 
 -- 22. Lista sin repetir los nombres de los grados que hay
 SELECT DISTINCT nombre FROM grado;
+
+-- 25. Mostrar nombre y dirección de los alumnos, cambiando 'C/' por 'Calle'
+SELECT nombre, REPLACE(direccion, 'C/', 'Calle') AS direccion FROM persona WHERE tipo = 'alumno';
 
 -- 26. Calcular cuántas mujeres tenemos guardadas en la tabla persona
 SELECT COUNT(*) AS mujeres_total FROM persona WHERE sexo = 'F';

@@ -1,6 +1,10 @@
--- Ana Pastor Roncero
+
+-- --------------------------------------
+-- Creacion BBDD Mentor
+-- --------------------------------------
+
 DROP DATABASE IF EXISTS mentor; 
-CREATE DATABASE mentor; -- creamis la base de datos
+CREATE DATABASE mentor; -- creamos la base de datos
 USE mentor; -- uso la base de datos, si no no funciona
 SHOW DATABASES; -- muestroala base de datos
 

@@ -1,5 +1,7 @@
+use liga;
+
 -- --------------------------------------
--- Consultas básicas
+-- Consultas basicas
 -- --------------------------------------
 
 -- 1. Datos de jugadores del equipo 3 ordenados por apellido.

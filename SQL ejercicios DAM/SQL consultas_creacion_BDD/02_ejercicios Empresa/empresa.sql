@@ -1,3 +1,8 @@
+
+-- -------------------------------------------
+-- Creacion BBDD EMPRESA, usuarios, permisos
+-- -------------------------------------------
+
 drop database if exists empresa; -- si existe una base de datos que se llame empresa que se borre y cree esta
 create database empresa;
 use empresa;

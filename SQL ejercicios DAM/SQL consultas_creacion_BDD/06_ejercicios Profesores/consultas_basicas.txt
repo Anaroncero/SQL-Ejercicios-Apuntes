@@ -1,6 +1,9 @@
+use profesores;
+
 -- --------------------------------------
--- Consultas Básicas
+-- Consultas Basicas
 -- --------------------------------------
+
 -- Mostrar toda la columna descripción de la tabla asignaturas
 SELECT descripcion FROM asignaturas;
 

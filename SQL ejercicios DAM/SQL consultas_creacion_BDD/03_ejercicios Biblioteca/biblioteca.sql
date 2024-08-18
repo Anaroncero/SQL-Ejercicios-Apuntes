@@ -1,3 +1,8 @@
+
+-- -------------------------------------------
+-- Creacion BBDD BIBLIOTECA
+-- -------------------------------------------
+
 drop database if exists biblioteca;
 create database biblioteca;
 

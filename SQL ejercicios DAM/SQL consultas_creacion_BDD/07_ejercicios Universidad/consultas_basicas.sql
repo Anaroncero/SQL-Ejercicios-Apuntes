@@ -1,3 +1,9 @@
+use universidad;
+
+-- --------------------------------------
+-- Consultas Básicas
+-- --------------------------------------
+
 -- 1. Muestra la tabla personas
 SELECT * FROM persona;
 
