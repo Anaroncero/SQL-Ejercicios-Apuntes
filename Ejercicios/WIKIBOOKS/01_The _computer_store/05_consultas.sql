@@ -69,9 +69,11 @@ HAVING AVG(Products.price) >= 150 and COUNT(Products.Manufacter) >=2;
 
 -- 18. Agregar un nuevo producto: Loudspeakers, $70, manufacturer 2.
 INSERT INTO Products(name, price, Manufacter) VALUES ('Loudspeakers', 70, 2);
-SELECT * FROM Products;
+
 -- 19. Actualice el nombre del producto 8 a "Impresora láser".
+UPDATE Products SET name = 'Laser Printer' WHERE Code = 8;
 
 -- 20. Aplicar un 10% de descuento a todos los productos.
+UPDATE Products SET price = price - (price * 0.1);
 
 -- 21. Aplicar un 10% de descuento a todos los productos con un precio mayor o igual a $120.
