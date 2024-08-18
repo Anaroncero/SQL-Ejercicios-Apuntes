@@ -66,3 +66,12 @@ FROM Manufacturers, Products
 WHERE Products.Manufacter = Manufacturers.code 
 GROUP BY Manufacturers.name, Products.manufacter
 HAVING AVG(Products.price) >= 150 and COUNT(Products.Manufacter) >=2;
+
+-- 18. Agregar un nuevo producto: Loudspeakers, $70, manufacturer 2.
+INSERT INTO Products(name, price, Manufacter) VALUES ('Loudspeakers', 70, 2);
+SELECT * FROM Products;
+-- 19. Actualice el nombre del producto 8 a "Impresora láser".
+
+-- 20. Aplicar un 10% de descuento a todos los productos.
+
+-- 21. Aplicar un 10% de descuento a todos los productos con un precio mayor o igual a $120.
