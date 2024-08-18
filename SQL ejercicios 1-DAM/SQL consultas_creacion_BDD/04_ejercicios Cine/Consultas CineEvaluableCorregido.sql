@@ -39,7 +39,7 @@ alter table pelicula change column titulo titulo varchar(50) not null; -- para c
 ALTER TABLE pelicula add foreign key(codPelicula) references genero(idGenero);
 
 -- crear un usuario
-create user 'alumno1'@'localhost' identified by 'Med@c'; -- detras de la arroba se puede poner una ip, localhost....
+create user 'alumno1'@'localhost' identified by '12345'; -- detras de la arroba se puede poner una ip, localhost....
 select user, host from mysql.user;
 
 -- dar permisos para el usuario

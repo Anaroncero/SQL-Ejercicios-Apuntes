@@ -15,21 +15,21 @@ create table empleados(
     );
 
 -- crear un usuario
-create user 'marta'@'localhost' identified by 'Med@c'; -- detras de la arroba se puede poner una ip, localhost....
+create user 'mary'@'localhost' identified by '123'; -- detras de la arroba se puede poner una ip, localhost....
 select user, host from mysql.user;
 
 -- dar permisos para el usuario
-grant alter on empresa to 'marta'@'localhost'; -- alter solo tiene permisos para modificar para dar todos los permisos grant all privilegies on empresa to marta  y si queremos darle ese permiso a todos ponemos empresa.* 
+grant alter on empresa to 'mary'@'localhost'; -- alter solo tiene permisos para modificar para dar todos los permisos grant all privilegies on empresa to marta  y si queremos darle ese permiso a todos ponemos empresa.* 
 
 -- añadir un nuevo atributo (desde consola con el usuario que tenemos permiso alter table empleados: > alter table empleados add column 'direccion' varchar(50) null after 'nombre';)
 alter table empleados add column direccion varchar(50) null after nombre;
 
-grant select on empresa.* to 'marta'@'localhost'; 
+grant select on empresa.* to 'mary'@'localhost'; 
 
 desc empleados;
 
 -- como ver los permisos que tiene un usuario
-show grants for 'marta'@'localhost';
+show grants for 'mary'@'localhost';
 
 alter table empleados change column nombre nombre varchar(20) not null; -- para cambiar el tamaño de dato de una columna
 
