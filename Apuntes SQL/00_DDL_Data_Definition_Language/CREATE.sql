@@ -5,6 +5,5 @@ Bases de datos, tablas, indices, vistas, procedimientos, funciones, disparadores
 Se puede usar con IF EXISTS o solo.
 */
 
-CREATE DATABASE IF EXISTS red_social;
 
 

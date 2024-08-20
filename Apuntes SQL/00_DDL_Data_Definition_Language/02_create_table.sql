@@ -44,14 +44,26 @@ CREATE TABLE users(
 );
 
 
-
+-- CREAR TABLA ----------------------------------------
 DROP TABLE IF EXISTS followers;
 CREATE TABLE followers(
 		follower_id  INT NOT NULL,
         following_id INT NOT NULL,
-        PRIMARY KEY(follower_id, following_id),
+        PRIMARY KEY(follower_id, following_id), -- ambos los ponemos como primary key porque no se pueden repetir (un usuario no se puede seguir a si mismo)
         FOREIGN KEY(follower_id) REFERENCES users(user_id),
         FOREIGN KEY(following_id) REFERENCES users(user_id)
+);
+
+DROP TABLE IF EXISTS publication;
+CREATE TABLE publication(
+	publication_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    text VARCHAR(200) NOT NULL,
+    num_commments INT DEFAULT 0,
+    num_likes INT DEFAULT 0,
+    num_shared INT DEFAULT 0,
+    ccreated_at TIMESTAMP NOT NULL DEFAULT(NOW()),
+    FOREIGN KEY (publication_id) REFERENCES users(user_id)
 );
 
 DROP TABLE IF EXISTS publication_likes;

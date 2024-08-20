@@ -10,17 +10,17 @@ VALUES (valor1, valor2, valor3, ...);
 
 
 -- INSERTAR DATOS EN LAS TABLAS ----------------------------------------
-INSERT INTO users(user_name, first_name, surname, age, email, phone_number) VALUES
-('jgarcia', 'Juan', 'García', 28, 'jgarcia@example.com', '600123456'),
-('mlopez', 'María', 'López', 34, 'mlopez@example.com', '600234567'),
-('fmartinez', 'Fernando', 'Martínez', 45, 'fmartinez@example.com', '600345678'),
-('jsanchez', 'Jose', 'Sánchez', 22, 'jsanchez@example.com', '600456789'),
-('abeatriz', 'Ana', 'Beatriz', 31, 'abeatriz@example.com', '600567890'),
-('lramos', 'Luis', 'Ramos', 27, 'lramos@example.com', '600678901'),
-('egarcia', 'Elena', 'García', 29, 'egarcia@example.com', '600789012'),
-('jhernandez', 'Javier', 'Hernández', 40, 'jhernandez@example.com', '600890123'),
-('ccruz', 'Carmen', 'Cruz', 36, 'ccruz@example.com', '600901234'),
-('lsuarez', 'Laura', 'Suárez', 33, 'lsuarez@example.com', '600012345');
+INSERT INTO users (user_name, first_name, surname, age, email, phone_number, follower_count, country) VALUES
+('jgarcia', 'Juan', 'García', 18, 'jgarcia@example.com', '600123456', 3, 'Spain'),
+('mlopez', 'María', 'López', 22, 'mlopez@example.com', '600234567', 1, 'Spain'),
+('fmartinez', 'Fernando', 'Martínez', 16, 'fmartinez@gmail.com', '600345678', 2, 'Spain'),
+('jsanchez', 'Jose', 'García', 22, 'jsanchez@example.com', '600456789', 2, 'Spain'),
+('abeatriz', 'Ana', 'Beatriz', 31, 'abeatriz@example.com', '600567890', 1, 'Spain'),
+('lramos', 'Luis', 'García', 23, 'lramos@example.com', '600678901', 2, 'Spain'),
+('egarcia', 'Elena', 'García', 29, 'egarcia@gmail.com', '600789012', 2, 'Spain'),
+('jhernandez', 'Javier', 'Hernández', 40, 'jhernandez@example.com', '600890123', 2, 'Spain'),
+('amcruz', 'Ana Maria', 'Cruz', 36, 'amcruz@example.com', '600901234', 1, 'Spain'),
+('lsuarez', 'Laura', 'Suárez', 33, 'lsuarez@gmail.com', '600012345', 2, 'Spain');
 
 
 INSERT INTO followers(follower_id, following_id) VALUES
