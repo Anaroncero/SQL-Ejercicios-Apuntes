@@ -6,7 +6,6 @@ bases de datos, tablas, indices, vistas, procedimientos, funciones, disparadores
 Se puede usar con IF EXISTS o solo.
 */
 
-
 -- Borrar Base de datos
 DROP DATABASE IF EXISTS red_social;
 -- Borrar Tabla

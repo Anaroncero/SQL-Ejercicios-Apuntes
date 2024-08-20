@@ -14,3 +14,5 @@ TCL (Transaction Control Language) gestiona transacciones.
 Instrucción SQL:
 comando + clasula + operadores + funciones
 
+Recurso:
+SQL Bolt: Para aprender SQL con ejercicios. https://sqlbolt.com/
