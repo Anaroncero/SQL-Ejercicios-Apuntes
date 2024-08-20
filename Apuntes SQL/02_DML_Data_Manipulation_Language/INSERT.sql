@@ -7,9 +7,7 @@ INSERT INTO nombre_tabla (columna1, columna2, columna3, ...)
 VALUES (valor1, valor2, valor3, ...);
  */
 
-
-
--- INSERTAR DATOS EN LAS TABLAS ----------------------------------------
+- INSERTAR DATOS EN LAS TABLAS ----------------------------------------
 INSERT INTO users (user_name, first_name, surname, age, email, phone_number, follower_count, country) VALUES
 ('jgarcia', 'Juan', 'García', 18, 'jgarcia@example.com', '600123456', 3, 'Spain'),
 ('mlopez', 'María', 'López', 22, 'mlopez@example.com', '600234567', 1, 'Spain'),
