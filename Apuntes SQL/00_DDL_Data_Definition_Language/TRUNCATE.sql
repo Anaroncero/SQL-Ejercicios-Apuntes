@@ -5,7 +5,7 @@ sin eliminar la estructura de la tabla. suele ser más rápido que DELETE porque
 las filas y no genera registros para cada fila eliminada
 
 Estructura:
-TRUNCATE TABLE tabla;
+    TRUNCATE TABLE tabla;
 */
 
 
