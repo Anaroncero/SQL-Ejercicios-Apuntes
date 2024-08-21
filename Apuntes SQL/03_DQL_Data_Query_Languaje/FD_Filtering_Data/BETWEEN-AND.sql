@@ -1,5 +1,5 @@
 /* 
-BETWEEN: 
+BETWEEN: Seleccionar resultados que se muestran dentro de un rango
 */
 
 -- 1. Selecciona los usuarios con edad entre 16 y 25
