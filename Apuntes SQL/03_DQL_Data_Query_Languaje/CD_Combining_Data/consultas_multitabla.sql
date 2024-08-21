@@ -27,17 +27,4 @@ ON tabla1.columna_comun = table2.ccolumna_comun;
  */
 
 
-SELECT users.user_id, users.user_name followign_id, COUNT(follower_id) AS followers
-FROM followers
-INNER JOIN users
-ON users.user_id = followers.following_id
-GROUP BY following_id
-ORDER BY followers DESC
-LIMIT 3;
 
-
-SELECT users.user_name, COUNT(*) AS publications
-FROM publication
-INNER JOIN users
-ON users.user_id = publication.user_id
-GROUP BY users.user_id, users.user_name;

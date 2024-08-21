@@ -1,3 +1,9 @@
+/* 
+ORDER BY: Ordernar el resultado de una consulta
+
+Se utiliza con: ASC (ascendente) y DESC (Descendente)
+*/
+
 -- 1. Selecciona los usuarios ordenados por nombre ascendente
 SELECT * FROM users ORDER BY first_name ASC;
 

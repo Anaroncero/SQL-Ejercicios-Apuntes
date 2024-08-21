@@ -1,3 +1,6 @@
+/* 
+DISTINCT: 
+*/
 -- 1. Seleccionar Todos los Nombres de Usuario Únicos
 SELECT DISTINCT user_name FROM users;
 

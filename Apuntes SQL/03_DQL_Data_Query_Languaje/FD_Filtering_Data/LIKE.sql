@@ -1,3 +1,7 @@
+/* 
+LIKE: 
+*/
+
 -- 1 Selecciona todos los usuarios que incluya el nombre Ana
 SELECT * FROM users WHERE first_name LIKE "%ana%";
 

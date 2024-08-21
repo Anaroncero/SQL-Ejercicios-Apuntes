@@ -1,3 +1,7 @@
+/* 
+IN: 
+*/
+
 -- 1. Selecciona los Usuarios de Spain y Scotland
 SELECT * FROM users WHERE country IN ('Spain', 'Scotland');
 

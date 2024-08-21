@@ -1,3 +1,8 @@
+/* 
+AND:
+OR:
+*/
+
 -- 1. Muestrame los usuarios de Spain o de edad 16
 SELECT * FROM users WHERE country = 'España' OR age = 16;
 

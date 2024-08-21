@@ -1,3 +1,7 @@
+/* 
+BETWEEN: 
+*/
+
 -- 1. Selecciona los usuarios con edad entre 16 y 25
 SELECT * FROM users WHERE age BETWEEN 16 AND 25;
 

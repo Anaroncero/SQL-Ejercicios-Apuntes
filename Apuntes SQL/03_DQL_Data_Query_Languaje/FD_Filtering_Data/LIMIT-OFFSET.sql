@@ -1,3 +1,7 @@
+/* 
+LIMIT: 
+OFFSET: 
+*/
 
 -- 1. Selecciona el nombre y apellido de los primero cinco usuarios
 SELECT first_name, surname FROM users LIMIT 5;
