@@ -1,5 +1,5 @@
 /* 
-IN: 
+IN: verificar si un valor especifico se encuentra dentro de un rango de valores
 */
 
 -- 1. Selecciona los Usuarios de Spain y Scotland

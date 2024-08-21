@@ -1,7 +1,3 @@
-/* 
-IS NULL: 
-IS NOT NULL:
-*/
 
 -- 1. Muestra todos los usuarios que no tengan una conuntry null
 SELECT * FROM users WHERE country IS NOT NULL;

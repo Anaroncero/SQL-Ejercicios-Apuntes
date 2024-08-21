@@ -1,6 +1,6 @@
 /* 
-LIMIT: 
-OFFSET: 
+LIMIT: Para especificar el número máximo de registros que quiero que se me muestren en la consulta
+OFFSET: Se utiliza para paginar los resultados de una consulta
 */
 
 -- 1. Selecciona el nombre y apellido de los primero cinco usuarios
