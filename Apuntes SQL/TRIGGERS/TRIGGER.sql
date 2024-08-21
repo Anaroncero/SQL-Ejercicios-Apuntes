@@ -8,6 +8,7 @@ optimizar consultas.
 */
 -- TRIGGERS ----------------------------------------
 
+-- 1. Incrementar numero seguidores
 DROP TRIGGER IF EXISTS increase_follower_count;
 -- Configuración del delimitador
 DELIMITER //
@@ -24,7 +25,7 @@ END//
 DELIMITER ;
 
 
-
+-- 1. Decrementar numero seguidores
 DROP TRIGGER IF EXISTS decrease_follower_count;
 -- Configuración del delimitador
 DELIMITER //
