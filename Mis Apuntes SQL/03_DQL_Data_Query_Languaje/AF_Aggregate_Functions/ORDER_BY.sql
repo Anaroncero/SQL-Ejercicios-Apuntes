@@ -10,7 +10,7 @@ SELECT * FROM users ORDER BY first_name ASC;
 -- 2. Selecciona los usuarios ordenados por apellido descendente
 SELECT * FROM users ORDER BY surname ASC;
 
---3. Selecciona los ultimos 4 usuarios ordenados por edad de mayores a menores
+-- 3. Selecciona los ultimos 4 usuarios ordenados por edad de mayores a menores
 SELECT * FROM users ORDER BY age DESC LIMIT 4;
 
 -- 4. Selecciona los cinco primeros usuarios ordenados alfabeticamente por apellido

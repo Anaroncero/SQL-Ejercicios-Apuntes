@@ -16,3 +16,5 @@ comando + clasula + operadores + funciones
 
 Recurso:
 SQL Bolt: Para aprender SQL con ejercicios. https://sqlbolt.com/
+
+BASE DE DATOS: red_social.sql

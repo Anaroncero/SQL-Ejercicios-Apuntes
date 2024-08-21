@@ -14,11 +14,11 @@ SELECT * FROM users WHERE first_name LIKE "%ana%";
 -- 2 Selecciona todos los usuarios que su apellido sea García
 SELECT * FROM users WHERE surname LIKE = "García";
 
---3 Selecciona todos los usuarios con nombre diferente a Fernando
+-- 3 Selecciona todos los usuarios con nombre diferente a Fernando
 SELECT * FROM users WHERE first_name != 'Fernando';
 
---4 Selecciona todos los usuarios con dominio de correo gmail
+-- 4 Selecciona todos los usuarios con dominio de correo gmail
 SELECT * FROM users WHERE email NOT LIKE "%gmail%"
 
---5. Busca al usuario femenino o masculino Fernand@
+-- 5. Busca al usuario femenino o masculino Fernand@
 SELECT * FROM users WHERE first_name LIKE 'fernand_';

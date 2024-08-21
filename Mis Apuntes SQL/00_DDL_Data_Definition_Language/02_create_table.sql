@@ -44,6 +44,21 @@ CREATE TABLE users(
 );
 
 
+-- CREAR TABLAS ----------------------------------------
+DROP TABLE IF EXISTS users;
+CREATE TABLE users(
+	user_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_name VARCHAR(50) NOT NULL UNIQUE,
+    first_name VARCHAR(50) NOT NULL,
+    surname VARCHAR(100) NOT NULL,
+    age INT(2) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone_number CHAR(10) NOT NULL UNIQUE,
+    follower_count INT NOT NULL DEFAULT 0,
+    created_at TIMESTAMP NOT NULL DEFAULT(NOW())
+);
+
+
 -- CREAR TABLA ----------------------------------------
 DROP TABLE IF EXISTS followers;
 CREATE TABLE followers(
@@ -63,7 +78,7 @@ CREATE TABLE publication(
     num_likes INT DEFAULT 0,
     num_shared INT DEFAULT 0,
     ccreated_at TIMESTAMP NOT NULL DEFAULT(NOW()),
-    FOREIGN KEY (publication_id) REFERENCES users(user_id)
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
 DROP TABLE IF EXISTS publication_likes;
@@ -74,3 +89,12 @@ CREATE TABLE publication_likes(
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (publication_id) REFERENCES publication (publication_id)
 );
+
+-- Creacion de usuario  ----------------------------------------
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY '123';
+SELECT user, host FROM mysql.user;
+	-- dar permisos
+    GRANT ALL PRIVILEGES ON red_social.* TO 'usuario'@'localhost';
+    -- ver los permisos que tiene un usuario
+    SHOW GRANTS FOR 'usuario'@'localhost';
+    FLUSH PRIVILEGES;
