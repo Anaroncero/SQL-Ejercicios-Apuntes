@@ -27,6 +27,5 @@ Este proyecto está bajo la [MIT License](LICENSE.md).
 ## 🤝 Contribuciones
 
 ¡Gracias por tu interés en contribuir a este proyecto! cómo puedes hacerlo:
-
-### 1. Clonar o Hacer Fork del Repositorio
-   https://github.com/Anaroncero/SQL-Ejercicios-Apuntes.git
+### Clonar o Hacer Fork del Repositorio
+https://github.com/Anaroncero/SQL-Ejercicios-Apuntes.git
