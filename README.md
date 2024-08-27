@@ -26,14 +26,7 @@ Este proyecto está bajo la [MIT License](LICENSE.md).
 
 ## 🤝 Contribuciones
 
-¡Gracias por tu interés en contribuir a este proyecto! Aquí te explicamos cómo puedes hacerlo:
+¡Gracias por tu interés en contribuir a este proyecto! cómo puedes hacerlo:
 
-### Clonar o Hacer Fork del Repositorio
-
-Para comenzar a contribuir, puedes clonar o hacer un fork del repositorio. Aquí están los pasos para cada opción:
-
-#### Clonar el Repositorio
-
-1. **Clona el Repositorio**: Usa el siguiente comando para clonar el repositorio a tu máquina local:
-   ```bash
-   git clone https://github.com/Anaroncero/SQL-Ejercicios-Apuntes.git
+### 1. Clonar o Hacer Fork del Repositorio
+   https://github.com/Anaroncero/SQL-Ejercicios-Apuntes.git
